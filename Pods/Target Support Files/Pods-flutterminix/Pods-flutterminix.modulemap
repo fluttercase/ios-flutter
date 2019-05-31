@@ -1,0 +1,6 @@
+framework module Pods_flutterminix {
+  umbrella header "Pods-flutterminix-umbrella.h"
+
+  export *
+  module * { export * }
+}

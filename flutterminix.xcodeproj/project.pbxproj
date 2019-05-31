@@ -12,9 +12,12 @@
 		4F7DC461229FF3400049D65A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7DC45F229FF3400049D65A /* Main.storyboard */; };
 		4F7DC463229FF3410049D65A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7DC462229FF3410049D65A /* Assets.xcassets */; };
 		4F7DC466229FF3410049D65A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7DC464229FF3410049D65A /* LaunchScreen.storyboard */; };
+		4F7DC46F22A0C4330049D65A /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7DC46E22A0C4330049D65A /* Bridge.swift */; };
+		C3CBE61AEC538755F70668CF /* Pods_flutterminix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454F910C1156EB0A396C29A8 /* Pods_flutterminix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		454F910C1156EB0A396C29A8 /* Pods_flutterminix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flutterminix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7DC458229FF3400049D65A /* flutterminix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flutterminix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7DC45B229FF3400049D65A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F7DC45D229FF3400049D65A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		4F7DC462229FF3410049D65A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F7DC465229FF3410049D65A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F7DC467229FF3410049D65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7DC46E22A0C4330049D65A /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		616DFE8D6AE1CF21939EAD21 /* Pods-flutterminix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flutterminix.release.xcconfig"; path = "Pods/Target Support Files/Pods-flutterminix/Pods-flutterminix.release.xcconfig"; sourceTree = "<group>"; };
+		6CDA80601D5644404A2B026F /* Pods-flutterminix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flutterminix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-flutterminix/Pods-flutterminix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CBE61AEC538755F70668CF /* Pods_flutterminix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414B4882098DD39158644CAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				454F910C1156EB0A396C29A8 /* Pods_flutterminix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F7DC44F229FF33F0049D65A = {
 			isa = PBXGroup;
 			children = (
 				4F7DC45A229FF3400049D65A /* flutterminix */,
 				4F7DC459229FF3400049D65A /* Products */,
+				8E98932AB9DDA62DEBC31B62 /* Pods */,
+				414B4882098DD39158644CAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				4F7DC462229FF3410049D65A /* Assets.xcassets */,
 				4F7DC464229FF3410049D65A /* LaunchScreen.storyboard */,
 				4F7DC467229FF3410049D65A /* Info.plist */,
+				4F7DC46E22A0C4330049D65A /* Bridge.swift */,
 			);
 			path = flutterminix;
+			sourceTree = "<group>";
+		};
+		8E98932AB9DDA62DEBC31B62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CDA80601D5644404A2B026F /* Pods-flutterminix.debug.xcconfig */,
+				616DFE8D6AE1CF21939EAD21 /* Pods-flutterminix.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F7DC46A229FF3410049D65A /* Build configuration list for PBXNativeTarget "flutterminix" */;
 			buildPhases = (
+				B9546B24E7165C21FC3E0E88 /* [CP] Check Pods Manifest.lock */,
 				4F7DC454229FF33F0049D65A /* Sources */,
 				4F7DC455229FF33F0049D65A /* Frameworks */,
 				4F7DC456229FF33F0049D65A /* Resources */,
+				18C043B5DC20BB0D5BE7DEB1 /* [CP] Embed Pods Frameworks */,
+				4F7DC46D229FF5CD0049D65A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,6 +160,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18C043B5DC20BB0D5BE7DEB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-flutterminix/Pods-flutterminix-frameworks.sh",
+				"${PODS_ROOT}/../flycode/.ios/Flutter/engine/Flutter.framework",
+				"${BUILT_PRODUCTS_DIR}/FlutterPluginRegistrant/FlutterPluginRegistrant.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlutterPluginRegistrant.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flutterminix/Pods-flutterminix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F7DC46D229FF5CD0049D65A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n";
+		};
+		B9546B24E7165C21FC3E0E88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flutterminix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F7DC454229FF33F0049D65A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +233,7 @@
 			files = (
 				4F7DC45E229FF3400049D65A /* ViewController.swift in Sources */,
 				4F7DC45C229FF3400049D65A /* AppDelegate.swift in Sources */,
+				4F7DC46F22A0C4330049D65A /* Bridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +377,12 @@
 		};
 		4F7DC46B229FF3410049D65A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDA80601D5644404A2B026F /* Pods-flutterminix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6XV885UTM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = flutterminix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +397,12 @@
 		};
 		4F7DC46C229FF3410049D65A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 616DFE8D6AE1CF21939EAD21 /* Pods-flutterminix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6XV885UTM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = flutterminix/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
